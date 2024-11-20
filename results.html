@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Results</h2>
+<p><strong>Extracted Text:</strong> {{ text }}</p>
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Try Another</a>
+{% endblock %}

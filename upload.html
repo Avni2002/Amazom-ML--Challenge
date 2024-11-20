@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST" action="/predict" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Upload an Image:</label>
+        <input type="file" name="file" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Predict</button>
+</form>
+{% endblock %}
